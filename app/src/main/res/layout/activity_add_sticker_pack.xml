@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Sticker Pack"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="24dp" />
+
+        <EditText
+                android:id="@+id/pack_identifier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pack ID"
+                android:inputType="text"
+                android:singleLine="true" />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Example: funny_memes"
+                android:textSize="12sp"
+                android:layout_marginBottom="16dp" />
+
+        <EditText
+                android:id="@+id/pack_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pack name"
+                android:inputType="textCapSentences"
+                android:singleLine="true" />
+
+        <EditText
+                android:id="@+id/pack_publisher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Publisher"
+                android:inputType="textCapSentences"
+                android:singleLine="true"
+                android:layout_marginTop="16dp" />
+
+        <Button
+                android:id="@+id/create_pack_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Sticker Pack"
+                android:layout_marginTop="32dp" />
+
+        <TextView
+                android:id="@+id/error_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_dark"
+                android:visibility="gone"
+                android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>
